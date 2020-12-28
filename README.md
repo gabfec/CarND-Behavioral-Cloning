@@ -6,7 +6,10 @@
 
 [image1]: ./examples/nvidia_model.png "Model Visualization"
 [image2]: ./examples/cameras.png "Cameras"
+[image3]: ./examples/demo.gif "Drive demo"
+[image4]: ./examples/run.gif "Video output"
 
+![alt text][image3]
 ---
 
 ### Overview
@@ -54,7 +57,7 @@ In order to reduce overfitting I added a dropout layer in the fully connected la
 The model uses an adam optimizer, so the learning rate has not to be manually tuned.
 
 
-### Training details
+### Training data
 
 After several attempt to collect my own data I realized this was one of the main challenges. Although I was somehow able to drive on the first track (at very low speed), the second track was nearly impossible. 
 Finnally I considered to use the provided samples since I needed a reliable reference in order to test my implementation and later on to expand it with my own set or with some augmentation techniques.
@@ -111,4 +114,8 @@ Here is a visualization of the architecture, as displayed during the execution:
 
 
 With this the vehicle is able to drive autonomously around the first track and for some part of the second track.
+
+A video file with the drive in autonomous mode can be found in the examples directory of this repo.
+
+![alt text][image4]
 
